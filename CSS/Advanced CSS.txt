@@ -1,0 +1,45 @@
+1. box-sizing: border-box; - to change the box model so that the borders and paddings are no longer added to the total width or the total height that we specify for a box.
+
+2. font-family and font-size is an inheritance property means it will inherit by all children.
+
+3. background-size: cover; - it always try to fit images in elemet's size.
+
+4. background-position: top; - when we resize the window, the top of an image is always gonna fixed.
+
+5. clip-path: polygon(x y, x y, x y, x y); - to set background image in desired shape.
+
+6. backface-visibility: hidden; - it determines if the back part of the element when we transform it will be visible or not to the user.
+
+7. only use !important as a last resource. It's better to use correct specificities - more maintainable code.
+
+8. The universal selector * has no specificity value(0,0,0,0).
+
+9. rem unit is always relative to the root font-size.
+
+10. Percentages are measured relative to their parent's font size, if used to specify font-size and their parent's width if used to specif lengths.
+
+11. em are measured relative to their parent font-size, if used to specify font-size and relative to current font-size, if used to specify lengths.
+
+12. Properties related to text are inherited: font-family, font-size, color etc.
+
+13. The Computed value of a property is what gets inherited, not the declared value.
+
+14. Inheritance of a property only works if no one declares a value for that property.
+
+15. The inherit keyword forces inheritance on a certain property.
+
+16. The initial keyword resets a property to its initial value.
+
+17. Saas is a CSS preprocessor, an extension of CSS that adds power and elegance to the basic language.
+
+18. Variable's name in Saas, starts with dollar sign.
+
+19. :not(last-child) - excluding last child.
+
+20. white-space: normal; - it will break the table column large text and grow table vertically.
+
+21. perspective property in css - The perspective property is used to give a 3D-positioned element some perspective. The perspective property defines how far the object is away from the user. So, a lower value will result in a more intensive 3D effect than a higher value. When defining the perspective property for an element, it is the CHILD elements that get the perspective view, NOT the element itself.
+
+22. 
+
+ 

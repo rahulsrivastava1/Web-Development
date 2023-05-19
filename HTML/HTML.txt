@@ -1,0 +1,15 @@
+* Multipart form data is one of the values of the enctype attribute. It is used to send the file data to the server-side for processing.
+
+* To optimize website load time we need to optimize its asset loading and for that we can use CDN hosting, File compression, File concatenation, Minify scripts, Parallel downloads, Lazy Loading.
+
+* The three kinds of Doctypes which are available: Strict Doctype, Transitional Doctype, and Frameset Doctype.
+
+* inline-flex: It displays the flex container as an inline element while its content follows the flexbox properties.
+
+* There are 4 target attributes: _self, _blank, _parent, _top.
+
+* In the case of <select> tag a user will have to choose from a list of options, whereas <datalist> when used along with the <input> tag provides a suggestion that the user selects one of the options given or can enter some entirely different value.
+
+* Image Map lets a developer map/link different parts of images with the different web pages. It can be achieved by the <map> tag in HTML5, using which we can link images with clickable areas.
+
+* The <meta> tag defines metadata about an HTML document.
