@@ -1,0 +1,6 @@
+Content Management System - A software which helps us to manage content a website.
+
+cPanel - A web-based administration tool for managing your web hosting account.
+
+Bootstrapping - Bootstrapping forms a layer of abstraction between the environment and the logic.
+

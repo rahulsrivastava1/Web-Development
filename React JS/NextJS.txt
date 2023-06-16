@@ -1,0 +1,8 @@
+What? - It is a React Framework for building production ready application. Means, in Next.js you don't need to install additional packages for routing, authentication, styling etc. It will provide everything.
+
+Why? - File based routing, pre-rendering, API routes, Authentication, Dev and Prod build system.
+
+ 
+
+
+

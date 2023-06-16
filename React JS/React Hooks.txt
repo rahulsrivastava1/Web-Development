@@ -1,0 +1,49 @@
+What - Hooks are a new feature addition in React version 16.8 which allow you to use React features without having to write a class.
+       Example - state of a component
+
+Why - With Hooks, you can extract stateful logic from a component so it can be tested independently and reused. Hooks allow you to reuse stateful logic without changing your component hierarchy. 
+
+Stateful logic - Stateful logic is any code that uses the state.
+
+useState - useState is React Hook that allows you to add state to a functional component. It returns an array with two values: the current state and a function to update it. The Hook takes an initial state value as an argument and returns an updated state value whenever the setter function is called.
+
+useEffect - useEffect hook lets you perform side effects in functional component. Example - title of page, fetching data from API.
+
+context - context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+useContext - useContext hook let you consumption of context in a simpler and readable way.
+
+useReducer - useReducer hook is a hook that is used for state management.
+
+React.memo - It is a higher-order component (HOC) provided by React that is used for optimizing functional components by preventing unnecessary re-renders.
+
+useCallback - useCallback is a hook that will return a memoized version of the callback function that only changes if one of the dependencies has changed.
+
+why to use useCallback? - It is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders.
+			  It is used for performance optimization.
+
+useMemo - useMemo hook is similar to useCallback except it allows you to apply memoization to any value type (not just functions).
+
+useCallback vs useMemo - If you have usecase to return cached callback function, use useCallback and if you have usecase to return cached/memoized version of value of function, use useMemo.
+
+There are specific reasons both of these hooks are built-into React : 1) Referential equality 2) Computationally expensive calculations
+
+useRef - useRef hook can be used to access a DOM element directly. It can also be used to store any mutable value.
+
+custom hook - A custom hook is basically a JavaScript function whose name starts with "use". A custom hook can also call other hooks if required.
+
+why we need custom hook - to share logic -> alternative to HOCs and Render Props
+
+HOCs - A higher-order component is a function that takes a component and returns a new component. Example - React.memo
+
+pure component - A pure component implements the shouldComponentUpdate lifecycle method by performing a shallow comparison on the props and state of the component. 
+
+use of pure component - Pure component by preventing unnecessary renders can give performance boost in certain scenario. 
+
+
+
+
+
+
+
+

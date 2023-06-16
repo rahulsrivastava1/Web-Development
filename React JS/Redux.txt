@@ -1,0 +1,106 @@
+Redux - Redux is a library for managing state in a predictable way in javascript applications.
+
+React-Redux - React-Redux is a library that provides binding to use React and Redux together in an application.
+
+Three core concepts - 
+1. Store - A store that holds the state of your application.
+2. Action - An action that describes the changes in the state of the application.
+3. Reducer - A reducer which actually carries out the state transition depending on the action.
+
+Three core principles - 
+1. Maintain our application state in a single object which would be managed by redux store.
+2. To update the state of your app, you need to let redux know about with an action.
+3. Write pure reducer, to perform state transitions based on action.
+
+State - State is a value that is provided to whole application and managed by redux.
+
+Code :-
+const initialState = {
+    noOfCakes: 10
+}
+
+Actions - Action is a pure javascript object with "type" property which is only way to interact with the store from your application.
+
+Action creator - An action creator is a function that returns an action.
+
+Code :- 
+const BUY_CAKE = "BUY_CAKE";
+
+function buyCake() {
+  return {
+    type: BUY_CAKE,
+    info: "First Redux Action",
+  };
+}
+
+Reducers - Reducer is a function that accepts state and action as arguments, and return next state of the application.
+(previousState, action) => newState
+
+Code :-
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case BUY_CAKE:
+      return {
+        ...state,
+        noOfCakes: state.noOfCakes - 1,
+      };
+
+    default:
+      return state;
+  }
+};
+
+Redux Store - One store for the entire application.
+
+Responsibilities :-
+1. Holds application state
+2. Allow access to state via getState()
+3. Allows state to be updated via dispatch(action)
+4. Registers listeners via subscribe(listener)
+5. Handles unregistering of listeners via the function returned by subscribe(listener)
+
+
+Code :-
+const redux = require("redux");
+const createStore = redux.createStore;
+
+const store = createStore(reducer);
+console.log("Initial State", store.getState());
+const unsubscribe = store.subscribe(() =>
+  console.log("Updated store", store.getState())
+);
+store.dispatch(buyCake());
+store.dispatch(buyCake());
+store.dispatch(buyCake());
+unsubscribe();
+
+CombineReducer - Redux provides a function called combineReducer which will accept an object with key value pair to combine two or more reducers.
+
+Syntax :-
+const rootReducer = redux.combineReducer({cake: cakeReducer, icecream: icecreamReducer})
+
+Middleware - Middleware provides a third party extension point between dispatching an action, and the moment it reaches the reducer.
+
+applyMiddleware - Redux library provides a function called applyMiddleware to apply middleware.
+
+redux-thunk - It is a middleware which provides to return a function(which should not to be pure) in action creator with dispatch as an argument.
+
+Provider - Redux provides a function called Provider which is used to provide store to the whole react application. Our app component should wrap up with Provider.
+
+mapStateToProps - This is a function which helps you to retrieve the redux state as props as state as a first argument. The second parameter that this function accepts is ownProps, which describes component props that was passed by parent component.
+
+mapDispatchToProps - This is a function which helps you to retrieve action creator as props and dispatch an action to reducer as dispatch as a first argument. The second parameter that this function accepts is ownProps, which describes component props that was passed by parent component.
+
+connect - connect is a function provided by react-redux library which will connect react component to redux store. In the connect function we can pass null if either of mapStateToProps or mapStateToDispatch is not present in our component.
+
+useSelector - useSelector is a hook which is provided by react-redux library that is equivalent to mapStateToProps function.
+
+useDispatch - useDispatch is a hook which is also provided by react-redux library that is equivalent to mapDispatchToProps function.
+
+
+
+
+
+
+
+

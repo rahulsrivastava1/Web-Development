@@ -2,7 +2,7 @@
 
 2. font-family and font-size is an inheritance property means it will inherit by all children.
 
-3. background-size: cover; - it always try to fit images in elemet's size.
+3. background-size: cover; - it always try to fit images in element's size.
 
 4. background-position: top; - when we resize the window, the top of an image is always gonna fixed.
 
@@ -16,7 +16,7 @@
 
 9. rem unit is always relative to the root font-size.
 
-10. Percentages are measured relative to their parent's font size, if used to specify font-size and their parent's width if used to specif lengths.
+10. Percentages are measured relative to their parent's font size, if used to specify font-size and their parent's width if used to specify lengths.
 
 11. em are measured relative to their parent font-size, if used to specify font-size and relative to current font-size, if used to specify lengths.
 
