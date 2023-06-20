@@ -1,0 +1,4 @@
+React Fragment - React fragments allow you to group children/child component together without adding an extra node to dom.
+
+Portal - When we have to render some items outside of root, We will make use of Portal in React. Example - Modal. React Dom provides createPortal function.
+ 
