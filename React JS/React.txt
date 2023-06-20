@@ -1,4 +1,20 @@
 React Fragment - React fragments allow you to group children/child component together without adding an extra node to dom.
 
 Portal - When we have to render some items outside of root, We will make use of Portal in React. Example - Modal. React Dom provides createPortal function.
+
+Pure Component - React.PureComponent is a same subclass like React.Component but it only renders component when there is difference between current and previous state or props.
+
+Higher Order Component - A HOC is an advanced technique in React for reusing component logic. HOC is a function that takes a component and returns a new component.
+
+Ref - Ref provides a way to access DOM nodes or React elements created in the render method. Example - Managing focus, text selection, media playback etc.
+
+Ref Forwarding - Ref Forwarding is a technique for automatically passing a ref through a component to one of its children.
+
+Error Boundaries - Error Boundaries are react components that catch javascript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.
+
+Error Boundaries don't catch errors for Event Handlers, Asynchronous code, server side rendering and errors thrown in the error boundary itself.
+
+A class component becomes error boundary by defining either or both of getDerivedStateFromError and componentDidCatch lifecycle methods.
+
+
  
