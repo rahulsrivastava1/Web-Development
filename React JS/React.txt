@@ -16,5 +16,6 @@ Error Boundaries don't catch errors for Event Handlers, Asynchronous code, serve
 
 A class component becomes error boundary by defining either or both of getDerivedStateFromError and componentDidCatch lifecycle methods.
 
+Recoil - It is a state management library for react which is developed by facebook. In this we have two major things, one is atom and other is selector.
 
- 
+

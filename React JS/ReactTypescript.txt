@@ -1,0 +1,12 @@
+# Passing Props to child
+
+1. For React Component children props, we assign value as children : React.ReactNode
+
+2. For onClick event => React.MouseEvent<HTMLButtonElement>
+
+3. For onChange event => React.ChangeEvent<HTMLInputElement>
+
+4. For function => () => void
+
+5. For styles => React.CSSProperties
+

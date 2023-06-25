@@ -1,0 +1,21 @@
+What - It is an open source programming language by Microsoft, which is typed superset of JavaScript. 
+
+Why - Optional static typing and type inference
+      It catches specific error at compile time rather than waiting for them to occur at runtime, making it easier to catch and fix them early in deployment.
+      IDE support
+
+Compile Typescript file to normal Javascript file for browser using typescript compiler.
+
+Installation - npm install -g typescript
+
+Check version - tsc -v
+
+Automatically compile typescript to javascript command - tsc filename --watch
+
+Variable type declaration - let varname : variabletype = value;
+
+To make optional a parameter in typescript function, we append '?' mark at the end of parameter name.
+
+
+
+

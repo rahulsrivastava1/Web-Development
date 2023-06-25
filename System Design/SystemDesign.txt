@@ -1,0 +1,9 @@
+Design Pattern - A software design pattern is a general, reusable solution to a commonly occuring problem within a given context in software design.
+
+1. Define the requirements from user perspective.
+
+2. Extensibility - Build a system that can scale & extended as and when requirements change.
+
+3. Testing
+
+4. 
