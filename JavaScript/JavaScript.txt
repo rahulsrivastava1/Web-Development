@@ -1,0 +1,4 @@
+Lodash - Lodash is a modern JavaScript utility library that can perform many JavaScript functionalities with very basic syntax.
+
+Installation - npm i lodash
+
